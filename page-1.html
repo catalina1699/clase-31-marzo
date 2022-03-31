@@ -8,8 +8,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 * { margin: 0; padding: 0; }
-body { background:#EED7FF;
-  color: #FDFBEE;
+body { background:(250);
+  color: (250) ;
    font-family: "Montserrat", sans-serif;
    font-weight: 300;}
 div { padding: 2rem; }
@@ -19,10 +19,15 @@ p { padding: (3rem, 4rem, 4rem, 0); }
    </head>
   <body>
   function setup() {
-  createCanvas(displayWidth, displayHeight);
+  [createCanvas(displayWidth, displayHeight);
   strokeWeight(10);
-  stroke(0);
-}
+      stroke(0);]
+    
+       button = createButton('guardar imagen');
+  button.position(500, 500);
+  button.mousePressed(save)
+           frameRate (10)}
+
 
 function touchMoved() {
   line(mouseX, mouseY, pmouseX, pmouseY);
